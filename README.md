@@ -69,5 +69,36 @@ Next, an "animated line" figure is created, where each point and it's connecting
 As for the optional inputs, a switch/case structure was used in a for loop to examine each paramater/value pair and set the new values for sample rate, etc., accordingly. Each case has it's own error checks to better improve user experience. 
 
 ```
+for i = 1:2:length(varargin)
+    Param = varargin{i};
+    Value = varargin{i+1};
+    
+    
+     Param = lower(Param);
+
+    switch Param
+
+        case 't_max'
+            if size(Value,1) ~= 1 || size(Value,2) ~=1
+                error('Please define ONE max time!')
+            elseif ~isnumeric(Value)
+                error('Please input t_max as a numeric')
+            end
+            t_max = Value;
+            
+            (etc...)
+            
+      end
+      
+ end
 
 ```
+
+
+## Results
+
+The results of this quick snippet of code are well worth the effort. The different geometric patterns that arise from playing around with the radii, angular velocities, and sampling rate are gorgeous, at times reminiscent of flowers. 
+
+![c2PATH Result](https://github.com/LiamLee1353/Circle_Path/blob/master/PATH.jpg)
+
+Very pretty! 
