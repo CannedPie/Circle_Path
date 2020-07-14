@@ -19,7 +19,7 @@ if nargin == 0
     disp('angle_measure --> omega expressed in degrees or radians')
     disp('samplerate --> refresh rate of animation figure')
     disp('EXAMPLE:')
-    disp('c2PATH(2,1,.33,1,''t_max'',30,''angle_measure'',''radians'')')
+    disp('c2PATH_gitver(2,1,.33,1,''t_max'',30,''angle_measure'',''radians'')')
     return
 elseif mod(nargin,2) ~= 0
     error('BAKA Please input argument pairs')
