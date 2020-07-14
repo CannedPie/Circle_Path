@@ -5,19 +5,21 @@ This is a MATLAB function that essentially traces a path using what amounts to a
 ## Theory
 In the words of Joberto Lee, "This is your introduction to dynamics". While this problem seems complex at the surface, it's really just a time-discrete version of vector addition. Imagine the path of each arm as the edge of a circle, where the arms themselves are just vectors pointing to where the edge is at that specific point in time. This is simplified further by the fact that each one arm to stuck to the end of the other, so the end position of the "double pendulum" is simply the two position vectors added together. 
 
+![c2PATH Theory](https://github.com/LiamLee1353/Circle_Path/blob/master/c2PATH%20Theory.jpg)
+
 
 ## Documentation 
 The line to call the function is as follows: 
-> c2PATH(r1,r2,w1,w2)
+> c2PATH_gitver(r1,r2,w1,w2)
 
 Which is input directly into the matlab command line. *r1* and *r2* respectively are the lengths of the arms and *w1* and *w2* are the respective angular velocities. 
 The function can also be called without any inputs, which displays further details and includes an example that you can run. 
 
-> c2PATH() 
+> c2PATH_gitver() 
 
 Optional input parameters are input as paramater/value pairs: 
 
-> c2PATH(2,1,.33,1,'(PARAMETER)','(VALUE)'
+> c2PATH_gitver(2,1,.33,1,'(PARAMETER)','(VALUE)'
 
 The default values are as below: 
 
@@ -62,3 +64,10 @@ end
 ```
 
 Next, an "animated line" figure is created, where each point and it's connecting line is added at time intervals of 1/(samplerate). 
+
+
+As for the optional inputs, a switch/case structure was used in a for loop to examine each paramater/value pair and set the new values for sample rate, etc., accordingly. Each case has it's own error checks to better improve user experience. 
+
+```
+
+```
