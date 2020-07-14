@@ -5,7 +5,6 @@ This is a MATLAB function that essentially traces a path using what amounts to a
 ## Theory
 In the words of Joberto Lee, "This is your introduction to dynamics". While this problem seems complex at the surface, it's really just a time-discrete version of vector addition. Imagine the path of each arm as the edge of a circle, where the arms themselves are just vectors pointing to where the edge is at that specific point in time. This is simplified further by the fact that each one arm to stuck to the end of the other, so the end position of the "double pendulum" is simply the two position vectors added together. 
 
- ![c2PATH Theory](LiamLee1353/Circle_Path/c2PATH Theory.jpg)
 
 ## Documentation 
 The line to call the function is as follows: 
