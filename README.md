@@ -7,5 +7,6 @@ In the words of Joberto Lee, "This is your introduction to dynamics". While this
 
 ## Documentation 
 The line to call the function is as follows: 
-> c2PATH(r1,r2,w1,w2)
+> c2PATH(r1,r2,w1,w2)...
+
 Which is input directly into the matlab command line. *r1* and *r2* respectively are the lengths of the 
