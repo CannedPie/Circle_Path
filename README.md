@@ -52,7 +52,7 @@ pos = [sum(x,1);sum(y,1)];
 
 ```
 
-The above code is the core of this particular script. It's rather simple, so it's consequently easy to follow. First, a vector of timepoints is created using the sample rate and the maximum specified time. Next, for every time point, an array of angles at different time points is created using the angular velocities. Then, the *x* and *y* components for each vector is computed, and added together to create the final array storing the position vectors. 
+The above code is the core of this particular script. It's rather simple, so it's consequently easy to follow. First, a vector of timepoints is created using the sample rate and the maximum specified time. Next, an array of angles at different time points is created using the angular velocities. Then, the *x* and *y* components for each vector is computed, and added together to create the final array storing the position vectors. 
 
 ```
 figure()
