@@ -16,7 +16,7 @@ The function can also be called without any inputs, which displays further detai
 
 Optional input parameters are input as paramater/value pairs: 
 
-> c2PATH(2,1,.33,1,'(PARAMETER)','(VALUE')
+> c2PATH(2,1,.33,1,'(PARAMETER)','(VALUE)'
 
 The default values are as below: 
 
